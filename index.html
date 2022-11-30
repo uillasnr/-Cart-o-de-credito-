@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de crédito interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <section>
+      <form>
+        <label>Nome DO TITULAR:</label>
+        <input type="text"placeholder="Nome titular" maxlength="30" class="nome-completo">
+        
+        <label>Numero do Cartão:</label>
+        <input type="number" placeholder="Numero do Cartão" maxlength="16" class="digitos-do-cartao">
+        
+        
+        <label>EXPIRA:</label>
+        <input type="date" name="expira" maxlength="4"class="data">
+        
+        <label class="cvc">cvc:</label>
+        <input type="number" name="cvc" maxlength="3" class="numero"placeholder=1234>
+        
+
+        <button class="button">ADICIONAR</button>
+
+      </form>
+
+
+      
+
+    
+    
+        <div class="container">
+            <div class="card front-face">
+
+                <header>
+                    <span class="Logo">
+                        <img src="./img/Mastercard-Logo.png" alt=""/>
+                        <h5>Master Card</h5>
+                    </span>
+
+                    <img src="./img/chip.png" alt="" class="chip"/>
+                 </header>
+
+                 <div class="card-detalhes">
+                    
+                    <div class="name-number">
+                        <h6>numero do cartao</h6>
+                        <h5 class="numero-do-cartao">8050 2030 3020 5040</h5>
+                           
+                        <div class="name">
+                            <h6>nome do titular</h6>
+                            <h5>uillas nascimento reis</h5>
+                        </div>
+                        
+                    </div>
+
+                    <div class="valid-date">
+                        <h6>valid thru</h6>
+                        <h5>05/28</h5>
+                    </div>    
+
+                </header>                   
+            </div>            
+        </div>
+    </section>
+</body>
+<script src="index.js"></script>
+
+</html>
